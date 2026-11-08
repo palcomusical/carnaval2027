@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-carnaval: 'Fredoka', 'Titan One', cursive, sans-serif;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: dark;
+}
+
+/* 3D Pop Carnival Title Effect matching the flyer */
+.text-carnaval-3d {
+  color: #FFE600;
+  -webkit-text-stroke: 3px #4C0519;
+  text-shadow: 
+    3px 3px 0px #581C87,
+    5px 5px 0px #3B0764,
+    7px 7px 0px #1E0338,
+    0 10px 25px rgba(88, 28, 135, 0.6);
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .text-carnaval-3d {
+    -webkit-text-stroke: 4px #3B0764;
+    text-shadow: 
+      4px 4px 0px #581C87,
+      7px 7px 0px #3B0764,
+      10px 10px 0px #1E0338,
+      0 12px 30px rgba(88, 28, 135, 0.7);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
